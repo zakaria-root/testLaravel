@@ -1,4 +1,8 @@
 * Introduction
 Laravel is a php based web development framework
 * Laravel Directory structure
-
+** The .env File
+This file contail the personal configuration that is specific to each machine, by default, it
+included in the .gitignore file, which means that it is going to be ignored by git.
+laravel will not work without this file, to create your own .env file, cp the .env.example and
+name the new copy .env.
