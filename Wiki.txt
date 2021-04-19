@@ -6,3 +6,15 @@ This file contail the personal configuration that is specific to each machine, b
 included in the .gitignore file, which means that it is going to be ignored by git.
 laravel will not work without this file, to create your own .env file, cp the .env.example and
 name the new copy .env.
+** Authentication problem in laravel 8
+c'est des bibliotheque est des fichier pres definie par laravel qui permet de générer
+une authentification avec des validation et des migration qui assosier a des modèles 
+pour assurer une bonne conection a la base de donné et pour faire ca il se fait de taper les comand
+suivant :
+ => composer require laravel/ui
+ => php artisan ui bootstrap
+ => php artisan migrate
+ => npm install
+ !! s'il y a problem de déclanchement de npm run dev vous etes obligé utiliser cette command 
+ => npm install --save-dev nodemon
+ => npm run dev
