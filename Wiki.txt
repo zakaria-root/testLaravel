@@ -5,7 +5,7 @@ Laravel is a php based web development framework
 This file contail the personal configuration that is specific to each machine, by default, it
 included in the .gitignore file, which means that it is going to be ignored by git.
 laravel will not work without this file, to create your own .env file, cp the .env.example and
-name the new copy .env.
+name the new copy .env: cp .env.example .env
 ** Authentication problem in laravel 8
 c'est des bibliotheque est des fichier pres definie par laravel qui permet de générer
 une authentification avec des validation et des migration qui assosier a des modèles 
