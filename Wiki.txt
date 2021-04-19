@@ -15,6 +15,7 @@ suivant :
  => php artisan ui bootstrap
  => php artisan migrate
  => npm install
- !! s'il y a problem de déclanchement de npm run dev vous etes obligé utiliser cette command 
+ !! s'il y a problem de déclanchement de npm run dev (t9der tchra7 achno kat3ni hadi?) vous
+ etes obligé utiliser cette command 
  => npm install --save-dev nodemon
  => npm run dev
