@@ -19,3 +19,15 @@ suivant :
  etes obligé utiliser cette command 
  => npm install --save-dev nodemon
  => npm run dev
+ ____________________________________
+**** add input in form authantication**
+______________
+authentification c'est un mecanisme qui devloper par laravel lui meme et qui est relier par pusieur regle qui assurer la perfermance et lafaciliter plus la securiter des donnes utilisateur pour pouvoire manipuler ou modifier quelque chose il se fait de suivre les etap suivant 👍 :
+=> views/auth/register.blade.php duplique un chan avec tout les modification personel de nouveau chan 
+ =>ajouter dans le app/http/controllers/auth/registerController.php un validation ou decontraint sur le nouveau chan 
+     presisament dans  la methode validator . pour  plus d'information a la validation : https://laravel.com/docs/8.x/validation
+ => ajouter votre chan aussi dans la method create de meme emplacement au niveau de la creation
+ => ajouter la colomn de chan dans la base de donne a partire le fichier migration create_user_table.php qui e trouve dans 
+     database/migration
+ => php artisan migrate:fresh pour effacer toute les donne de la base 
+ => ajouter le nom de votre chan dans le model app/modelsuser.php dans la methode fillable 
