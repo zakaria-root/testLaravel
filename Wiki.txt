@@ -16,6 +16,11 @@ is a file that is used to configure composer.
 To generate the vendor directory You need to use the following command:
   composer install
 It will create the vendor folder and install all dependencies from the laravel project, from the package.json
+** 500 | Server Error
+If you ran php artisan serve, and after you oppend the project url in the browser, you got a
+page saying 500 | Server Error, then Make sure a .env file, containing an APP_KEY, exists in
+the project root directory.
+If the APP_KEY is empty you need to run the following command: php artisan key:generate
 * Laravel Directory structure
 ** Authentication problem in laravel 8
 c'est des bibliotheque est des fichier pres definie par laravel qui permet de générer
