@@ -1,11 +1,22 @@
 * Introduction
 Laravel is a php based web development framework
-* Laravel Directory structure
+* Cloning a laravel project
+When creating a laravel project, a .ignore file is created in the project root directory, this
+file contains the names of folders and files that are going to be ingnored by git.
 ** The .env File
 This file contail the personal configuration that is specific to each machine, by default, it
-included in the .gitignore file, which means that it is going to be ignored by git.
+included in the .gitignore file.
 laravel will not work without this file, to create your own .env file, cp the .env.example and
-name the new copy .env: cp .env.example .env
+name the new copy .env, in unix/linux systems you can run the following commands:
+  1. cd /project/root/directory
+  2. cp .env.example .env
+** The vendor Directory
+The vendor directory hosts allot of important files, of which, the autoload.php file, which
+is a file that is used to configure composer.
+To generate the vendor directory You need to use the following command:
+  composer install
+It will create the vendor folder and install all dependencies from the laravel project, from the package.json
+* Laravel Directory structure
 ** Authentication problem in laravel 8
 c'est des bibliotheque est des fichier pres definie par laravel qui permet de générer
 une authentification avec des validation et des migration qui assosier a des modèles 
