@@ -10,9 +10,9 @@
             <div class="col-md-9 p-5 ">
                 <h1 class="pb-3">tanjiro.__.kun</h1>
                 <div class="d-flex">
-                    <div class="pr-5"><strong>28 </strong> publications</div>
-                    <div class="pr-5"><strong>54 </strong> abonnés</div>
-                    <div class="pr-5"><strong>71 </strong> abonnements</div>
+                    <div class="pr-5"><strong>280 </strong> publications</div>
+                    <div class="pr-5"><strong>54k </strong> abonnés</div>
+                    <div class="pr-5"><strong>71k </strong> abonnements</div>
                 </div>
                 <div class="mt-3">
                     <strong>Elmourtazak zakaria</strong> <br>
