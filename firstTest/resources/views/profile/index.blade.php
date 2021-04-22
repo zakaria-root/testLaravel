@@ -10,12 +10,12 @@
             <div class="col-md-9 p-5 ">
                 <div class="d-flex justify-content-between">           
                     <h1 class="pb-2">{{ $user->profile->title }}</h1>
-                    <a href="p/create" class="mt-3">add new post</a>
+                    <a href="/p/create" class="mt-3">add new post</a>
                 </div>
                 <div class="d-flex">
-                    <div class="pr-5"><strong>280 </strong> publications</div>
+                    <div class="pr-5"><strong>{{ $user->posts->count() }} </strong> publications</div>
                     <div class="pr-5"><strong>54k </strong> abonnés</div>
-                    <div class="pr-5"><strong>71k </strong> abonnements</div>
+                    <div class="pr-5"><strong>71 </strong> abonnements</div>
                 </div>
                 <div class="mt-3">
                     <strong>{{ $user->profile->description }}</strong> <br>
@@ -27,7 +27,7 @@
                     ◆◇◈ ◆◇<br>
                     🔹if you want to learn📚 amv editing: <br>
                 </div>
-                <div class="font-weight-bold ">
+                <div class="font-weight-bold">
                     <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCUY5I0xV7ATsl9srfQsaOTQ%2Ffeatured%3Fdisable_polymer%3D1&e=ATPz6uuWUn8g8AOtqxtQON4KaLJql90bom0LovpHJlUHoh4vTnN7zqlM3bxEVVGxr9IUvPrxXsPOo8R9xMgau9g&s=1">{{ $user->profile->url ??  'www.youtube.com/channel/UCUY5I0xV7ATsl9srfQsaOTQ/featured?disable_polymer=1...'}}
                     </a>
                 </div>
@@ -35,7 +35,7 @@
             <div class="row pt-5">
             @foreach ($user->posts as $post)
                 
-                <div class="col-md-4"><img src="/storage/{{ $post->image }}" class="w-100"></div>
+                <div class="col-md-4 mb-5"><img src="/storage/{{ $post->image }}" class="w-100 "></div>
                 @endforeach
             </div>
         </div>
